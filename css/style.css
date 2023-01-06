@@ -1,4 +1,53 @@
-header, main, footer {
-  display: flex;
-}
+
+header,main, footer {display:flex;} 
+
 li {list-style-type: none;}
+
+
+
+i {color: #0065FC;}
+
+.fa-location-dot {color:#000000;width: 14px; height: 18px;}
+
+.fa-money-bill-wave{width: 22px; height: 16.26px;}
+.fa-person{width: 13.44px; height: 22px;}
+.fa-heart{width: 22px; height: 18.33px;}
+.fa-dog{width: 22px; height: 22px;}
+
+.fa-info{width: 24px; height: 24px;}
+
+.fa-star{width: 12px; height: 12px;}
+
+.fa-chart-line {width: 18px; height: 15.75px;}
+
+.logo{position: absolute;
+  width: 61.09px;
+  height: 19px;
+  left: 0px;
+  top: 0px;
+  background: #0065FC;}
+
+button {color: #FFFFFF;
+background: blue;
+}
+  
+  
+
+input:hover {background: #DEEBFF}
+
+.hebfav{background: #F2F2F2; border-radius: 20px;}
+
+article {background: #FFFFFF; border-radius: 20px;}
+
+.imgheb {width: 246px; height: 124px;}
+
+.imgpop {width: 137px; height: 144px;}
+
+
+.imgact {width: 302px;}
+
+.imgactportparc {height:444.51px;}
+
+.imgactfortdame {height:445px;}
+
+footer {background : #F2F2F2;}
