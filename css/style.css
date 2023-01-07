@@ -1,5 +1,7 @@
 
-header,main, footer {display:flex;} 
+/*flex*/
+
+.container{display:flex;} 
 
 li {list-style-type: none;}
 
@@ -20,20 +22,20 @@ i {color: #0065FC;}
 
 .fa-chart-line {width: 18px; height: 15.75px;}
 
-.logo{position: absolute;
-  width: 61.09px;
-  height: 19px;
-  left: 0px;
-  top: 0px;
-  background: #0065FC;}
+/*logo*/
+
+.logo{width: 61.09px;
+  height: 19px;}
 
 button {color: #FFFFFF;
 background: blue;
 }
   
-  
+ /*filter*/ 
 
-input:hover {background: #DEEBFF}
+.filter:hover {background: #DEEBFF}
+
+
 
 .hebfav{background: #F2F2F2; border-radius: 20px;}
 

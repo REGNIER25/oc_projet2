@@ -14,15 +14,22 @@
 
     <header>
 
-        <nav>
+        <div class="container">
 
-            <a href="#"><Img class="logo" src="images/logo/booki.png" alt="Logo Booki"></a>
             <div>
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+        
+            <a href="#"><Img class="logo" src="images/logo/booki.png" alt="Logo Booki"></a>
             </div>
 
-        </nav>
+            <div>
+
+                <nav>
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a>
+            </nav>
+
+        </div>
+    </div>
 
         <div>
             <h1 class="trouverheb">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -40,12 +47,15 @@
 
         </div>
 
-        <div>
+        <div class="container">
             Filtres
-            <i class="fa-solid fa-money-bill-wave"></i><input  type="button" value="Économique">
-            <i class="fa-solid fa-person"></i><input type="button" value="Familial">
-            <i class="fa-solid fa-heart"></i><input type="button" value="Romantique">
-            <i class="fa-solid fa-dog"></i><input type="button" value="Animaux autorisés">
+
+            
+            <div class="filter"><i class="fa-solid fa-money-bill-wave"></i>Économique</div>
+            <div class="filter"><i class="fa-solid fa-person"></i>Familial</div>
+            <div class="filter"><i class="fa-solid fa-heart"></i>Romantique</div>
+            <div class="filter"><i class="fa-solid fa-dog"></i>Animaux autorisés</div>
+    
 
         </div>
 
@@ -57,10 +67,10 @@
     </header>
 
     <main>
-
-        <div>
+<div class="container">
             <section class="hebfav">
                 <h2>Hébergements à Marseille</h2>
+                <div class="container">
                 <article>
                     <Img class = "imgheb" src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière ">
                     <h3>La Canebière</h3> 
@@ -88,6 +98,8 @@
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
                 </article>
+            </div>
+            <div class="container">
                 <article>
                     <Img class = "imgheb" src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                         <h3>Hôtel de la mer</h3>
@@ -111,11 +123,49 @@
 <i class="fa-solid fa-star"></i>
 <i class="fa-solid fa-star"></i>
                 </article>
+            </div>
                 <a href="#">Afficher plus</a>
             </section>
 
+            <section class="hebfav">
+                <h2>Les plus populaires<i class="fa-solid fa-chart-line"></i> </h2>
+                <article>
+                    <Img class = "imgpop" src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                        <h3>Hôtel Le soleil du matin</h3>
+                        <p>Nuit à partir de 128€</p>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+                </article>
+                <article>
+                    <Img class = "imgpop" src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d’hôtes Au cœur de l’eau">
+                        <h3>Chambres d’hôtes Au cœur de l’eau</h3>
+                        <p>Nuit à partir de 71€</p>
+                        <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+                </article>
+                <article>
+                    <Img class = "imgpop" src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
+                        <h3>Hôtel Bleu et Blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                        <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+                </article>
+            </section>
+        </div>
+
+
+
             <section>
                 <h2>Activités à Marseille</h2>
+
+                <div class="container">
+
                 <div>
                     <Img class = "imgact imgactportparc" src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
                         <figure>Vieux-Port</figure>
@@ -132,43 +182,17 @@
                     <Img class = "imgact imgactfortdame" src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                         <figure>Notre-Dame-de-la-Garde</figure>
                     </div>
+                </div>
             </section>
-        </div>
+       
 
-        <section class="hebfav">
-            <h2>Les plus populaires</h2><i class="fa-solid fa-chart-line"></i>
-            <article>
-                <Img class = "imgpop" src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                    <h3>Hôtel Le soleil du matin</h3>
-                    <p>Nuit à partir de 128€</p>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-            </article>
-            <article>
-                <Img class = "imgpop" src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d’hôtes Au cœur de l’eau">
-                    <h3>Chambres d’hôtes Au cœur de l’eau</h3>
-                    <p>Nuit à partir de 71€</p>
-                    <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-            </article>
-            <article>
-                <Img class = "imgpop" src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
-                    <h3>Hôtel Bleu et Blanc</h3>
-                    <p>Nuit à partir de 68€</p>
-                    <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-            </article>
-        </section>
+        
 
     </main>
 
     <footer>
+
+        <div class="container">
         <div>
             <h2>À propos</h2>
             <ul>
@@ -193,8 +217,9 @@
                 <li><a href="#">Centre d’aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
             </ul>
-
         </div>
+
+    </div>
 
     </footer>
 
