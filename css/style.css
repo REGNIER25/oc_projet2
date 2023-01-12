@@ -4,8 +4,40 @@ bleu = #0065FC
 bleu clair = #DEEBFF
 gris pour le fond = #F2F2F2*/
 
-/*largeur max*/
-body {max-width:1400px;}
+/*body : police, largeur max*/
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2'), 
+  format('woff2');}
+
+body {font-family: 'raleway'; max-width:1400px;}
+
+/*liens*/
+
+a {text-decoration: none;
+color:#000000;}
+
+/*titres*/
+
+h1{font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;}
+
+h2 {font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+color: #000000;}
+
+h3
+{font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #000000;}
+
 
 /*flex*/
 
@@ -15,19 +47,19 @@ body {max-width:1400px;}
 
 li {list-style-type: none;}
 
-/*nav*/
+/*logo*/
 
-.divlogo {width:50%;}
-
-.logo{
-  width: 61.09px;
+.logo{width: 61.09px;
   height: 19px;
   left: 0px;
   top: 0px;
 }
 
+/*nav*/
+
 nav {width:50%;
 text-align: right;
+justify-content: space-between; 
 color: #000000;}
 
 nav,a:hover{color:#0065FC;}
@@ -43,11 +75,14 @@ i {color: #0065FC;}
 .fa-heart{width: 22px; height: 18.33px;}
 .fa-dog{width: 22px; height: 22px;}
 
-.fa-info{border: 1px solid #D9D9D9; border-radius: 100%; width: 24px; height: 24px;}
-
 .fa-star{width: 12px; height: 12px;}
 
-.fa-chart-line {width: 18px; height: 15.75px;}
+/*icon Info*/
+
+.fa-info{border: 1px solid #D9D9D9; text-align : center; border-radius: 100%; width: 24px; height: 24px;}
+
+/*icon Pop*/
+.fa-chart-line {width: 18px; height: 15.75px; text-align: right;}
 
 /*bouton recherche*/
 
@@ -62,36 +97,96 @@ text-align: center;
 flex: none;
 }
 
+.recherche {
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+background: #FFFFFF;
+border: 1px solid #F2F2F2;
+border-radius: 15px;
+box-sizing: border-box;}
 
   
  /*filter*/ 
 
-.filter {border: 2px solid #D9D9D9; border-radius: 25px;}
+ .filtres {justify-content: space-between; width: 75%;}
+
+.filter {border: 2px solid #D9D9D9; border-radius: 25px; justify-content: center;
+  left: 0%;right: 0%;top: 0%;bottom: 0%;
+  box-sizing: border-box;}
+
+
 .filter:hover {background: #DEEBFF;}
 
 /*sections*/
 
-.heb {width: 75%;}
-.pop {width: 25%;}
-
-.articleheb {flex-direction: row;}
-
 /*hebergements et populaires */
 
-.hebpop{background: #F2F2F2; border-radius: 20px;flex-direction: column;}
+.hebpoprow {display: flex;
+  flex-direction:row;}
+
+/*herbergements*/
+
+.heb {width: 75%;
+flex-direction:column;}
+
+.articleheb {display: flex;
+  flex-direction:row;
+flex-wrap:wrap;}
+
+.imgheb {width: 246px; height: 124px;
+  border-radius: 20px 20px 0px 0px;}
+
+.afficher {flex-direction:column;}
+
+/*populaire*/
+
+.pop {width: 25%;
+  flex-direction:column;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #F2F2F2;
+  border-radius: 20px;}
+
+
+  .articlepop {display: flex;
+    flex-direction:column;}
+
+    .articlepoprow {display: flex;
+      flex-direction:row;}
+
+
+.hebpop{background: #F2F2F2; border-radius: 20px;}
+
+.imgpop {width: 137px; height: 144px;border-radius: 20px 0px 0px 20px;}
 
 article {background: #FFFFFF; border-radius: 20px;}
 
-.imgheb {width: 246px; height: 124px;}
 
-.imgpop {width: 137px; height: 144px;}
+
+
 
 /*activites*/
 
-.cardact {border-radius:20px;
-width:25%;}
+.acti {width: 100%;
+  display: flex;
+  flex-direction:column;}
 
-.imgact {width: 302px;}
+.articleact {display: flex;
+    flex-direction:row;}
+
+.cardact {width:25%;}
+
+.imgact {width: 302px;border-radius: 20px;}
+
+.cardact + h3{width: 247px;
+height: 15px;
+left: 19px;
+bottom: 20.51px;}
+
 
 .imgactportparc {height:444.51px;}
 
@@ -99,7 +194,15 @@ width:25%;}
 
 /*footer*/
 
-footer {background : #F2F2F2;}
+footer {background : #F2F2F2;
+  left: 3.33%;
+  right: 3.68%;
+  top: 0%;
+  bottom: -10.84%;}
+
+ .menufooter{justify-content: space-between;}
+
+ .menufooter, ul {padding:0px;}
 
 /*Media queries*/
 /*1 deskstop
