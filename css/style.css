@@ -6,9 +6,8 @@ gris pour le fond = #F2F2F2*/
 
 /*body : police, largeur max*/
 
-/* /*1 deskstop
-
-@media screen and (min-width:992px;) {}*/
+/*deskstop*/
+/*@media screen and (min-width:992px;) {}*/
 
 @font-face {
   font-family: 'Raleway';
@@ -62,8 +61,6 @@ li {list-style-type: none;}
 
 /*header*/
 
-.headerline {padding-top:10px;}
-
 /*logo*/
 
 .logo{width: 61.09px;
@@ -79,11 +76,10 @@ nav {
   font-size: 16px;
   line-height: 19px;
 text-align: center;
-  width: 50%;
 height: 19px;
 left: 982px;
 top: 48px;
-color: #000000;
+float:right;
 }
 
 nav a:hover{color:#0065FC;
@@ -104,23 +100,16 @@ bottom: 0%;}
 
 i {color: #0065FC;}
 
-.fa-location-dot {color:#000000; background:#F2F2F2; width: 14px; height: 18px;}
 
 .fa-money-bill-wave{width: 22px; height: 16.26px;}
 .fa-person{width: 13.44px; height: 22px;}
 .fa-heart{width: 22px; height: 18.33px;}
 .fa-dog{width: 22px; height: 22px;}
 
-.fa-star{width: 12px; height: 12px; left: 152px;
-  bottom: 12px; left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;}
 
-/*icon Info*/
 
-.fa-info{border: 1px solid #D9D9D9; text-align : center; border-radius: 100%; width: 24px; height: 24px;}
 
+  
 /*icon Pop*/
 .fa-chart-line {width: 18px; height: 15.75px; text-align: right;}
 
@@ -129,7 +118,20 @@ i {color: #0065FC;}
 .recherche {width: 100%;
   flex-direction:column;}
 
-/*bouton recherche*/
+  /* Rectangle 13 */
+
+  /* Input/MainLocation */
+
+  /* Rectangle 14 */
+
+/* map-marker-alt */
+
+.fa-location-dot {color:#000000; background:#F2F2F2; width: 14px; height: 18px;}
+
+
+  /* Marseille, France */
+
+/* Button */
 
 button {color: #FFFFFF;
 background: blue;
@@ -149,15 +151,40 @@ border-radius: 15px;
 display: inline-block;}
 
   
- /*filter*/ 
+ /* Filtres */
 
- .filtres {justify-content: space-between; flex-direction:row;}
+ /* FilterBar */
 
-.filter {border: 2px solid #D9D9D9; border-radius: 25px; justify-content: center; 
-  display: inline-block;}
+
+ /* Title/Filter */
+
+
+ /* Filter */
+
+ /* Économique */
+
+
+ /* Romantique */
+
+ /* Animaux autorisés */
+
+
+.filtres {justify-content: space-between; flex-direction:row;}
+
+.filter {box-sizing: border-box; border: 2px solid #D9D9D9; border-radius: 25px; justify-content: center; }
 
 
 .filter:hover {background: #DEEBFF;}
+
+/* Infobar */
+
+  /* Plus de 500 logements sont disponibles dans cette ville */
+
+/*icon Info*/
+
+.fa-info{border: 1px solid #D9D9D9; text-align : center; border-radius: 100%; width: 24px; height: 24px;}
+
+
 
 /*sections*/
 
@@ -166,7 +193,25 @@ display: inline-block;}
 .hebpoprow {display: flex;
   flex-direction:row;}
 
-/*herbergements*/
+/*hebergements*/
+
+/* Auberge la Canebière */
+
+/* Rectangle 19 */
+
+/* Hôtel Les mouettes */
+
+/* Hôtel de la mer */
+
+/* Auberge Le Panier */
+
+/* Stars */
+
+.fa-star{width: 12px; height: 12px; left: 152px;
+  bottom: 12px; left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;}
 
 .heb {width: 75%;
 flex-direction:column;
@@ -185,7 +230,15 @@ flex-wrap:wrap;}
 
 .afficher {flex-direction:column;}
 
-/*populaire*/
+/* Les plus populaires */
+
+/* Hôtel Le soleil du matin */
+
+/* Chambres d’hôtes Au cœur de l’eau */
+
+/* Hôtel Bleu et Blanc */
+
+/* Nuit à partir de 68€ */
 
 .pop {width: 25%;
   flex-direction:column;
@@ -210,11 +263,15 @@ flex-wrap:wrap;}
 
 article {background: #FFFFFF; border-radius: 20px;}
 
+/* Activités */
 
 
+/* Card/Activity */
 
+/* Parc national des Calanques */
 
-/*activites*/
+/* Notre-Dame-de-la-Garde */
+
 
 .acti {width: 100%;
   display: flex;
@@ -239,7 +296,7 @@ bottom: 20.51px;}
 
 .imgactfortdame {height:445px;}
 
-/*footer*/
+/*Footer*/
 
 footer {background : #F2F2F2;
   left: 3.33%;
@@ -254,6 +311,8 @@ footer {background : #F2F2F2;
 
 
  .menufooter{justify-content: space-between;}
+
+ /* Footer/Link */
 
  .menufooter, ul {padding:0px;}
 
