@@ -103,6 +103,19 @@ right: 0%;
 top: 0%;
 bottom: 0%;}
 
+/* Hébergements */
+/* Nav/Standard */
+
+/* Black */
+
+/* Blue */
+
+/* Rectangle 25 */
+
+/* Blue */
+
+/* Activités */
+
 /*icons*/
 
 i {color: #0065FC;}
@@ -134,41 +147,100 @@ i {color: #0065FC;}
 .recherche {width: 100%;
   flex-direction:column;}
 
-  /* Rectangle 13 */
+   /* Input/MainLocation */
 
-  /* Input/MainLocation */
+   .mainlocation {width: 332px;
+height: 49px;
+left: 55px;
+top: 199px;}
+
+  /* Rectangle 13 */
+  /* White */
+  /* Grey */
+
+  form {left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;}
 
   /* Rectangle 14 */
+  /* Grey */
+  /* Grey */
+  .rect14 {left: 0%;
+  right: 84.94%;
+  top: 0%;
+  bottom: 0%;
+  background: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px 0px 0px 15px;}
+  
 
 /* map-marker-alt */
+/* Vector */
+.fa-location-dot {left: 5.42%;
+right: 90.36%;
+top: 32.65%;
+bottom: 30.61%;
+color: #000000;}
 
-.fa-location-dot {color:#000000; background:#F2F2F2; width: 14px; height: 18px;}
-
-
-  /* Marseille, France */
+  /* Marseille, France */ 
+  /* Black */
+input {
+    left: 20.18%;
+  right: 35.54%;
+  top: 28.57%;
+  bottom: 28.57%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;}
+input::placeholder  {opacity : 1;}
 
 /* Button */
+/* Auto layout */
+/* Blue */
+/* Blue */
+button 
+{flex-direction: row;
+align-items: center;
+padding: 15px 16px;
+gap: 10px;
+width: 49px;
+height: 49px;
+left: 282px;
+top: 0px;
+background: #0065FC;
+border: 1px solid #0065FC;
+border-radius: 15px;
+overflow-y:visible;
+}
+
+/* White */
+
 
 /* Button/Search/Desktop */
 
+/* Blue */
+
+/* Blue */
+
+/* White */
+
+
+
+
+
 /* Rechercher */
 
-button {color: #FFFFFF;
-background: blue;
-width: 100px;
-height: 21px;
-font-weight: 700;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-flex: none;
-}
+/* White */
 
-form {
-background: #FFFFFF;
-border: 1px solid #F2F2F2;
-border-radius: 15px;
-display: inline-block;}
+
+
+
 
   
  /* Filtres */
@@ -180,16 +252,47 @@ display: inline-block;}
 
 
  /* Filter */
+ /* Blue */
+ /* Blue */
+
+ /* Frame 7 */
+
+
+/* Blue */
+
+ /* Frame 6 */
+ /* Black */
 
  /* Économique */
+/* Black */
+
+ /* Blue */
 
 /* Familial */
+/* Black */
+
+ /* Blue */
+
 
  /* Romantique */
+ /* Black */
 
  /* Rectangle 17 */
+/* Black */
+
+ /* Blue */
+/* Black */
+
+ /* Blue */
+ /* Blue */
+ /* Blue */
+ /* Blue */
+ /* Blue */
 
  /* Animaux autorisés */
+
+ /* Black */
+ /* Blue */
 
 
 .filtres {justify-content: space-between; flex-direction:row;}
@@ -204,6 +307,7 @@ display: inline-block;}
   /* Plus de 500 logements sont disponibles dans cette ville */
 
   /* Information */
+  /* Blue */
 
 /*icon Info*/
 
@@ -223,6 +327,8 @@ display: inline-block;}
   /* Section */
 
   /* Rectangle 18 */
+    /* Grey */
+
 
 /*hebergements*/
 
@@ -230,15 +336,30 @@ display: inline-block;}
 /* Card/Main */
 
 /* Shadow/Card */
+.shadow:hover {filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));}
+
 
 /* Rectangle 19 */
 
+/* White */
+
 /* Rectangle 20 */
 
+/* White */
+
 /* Group 9 */
+.group9 {width: 204px;
+  height: 39px;
+  left: 16px;
+  top: 128px;}
 
 /* Stars */
-
+/* Blue */
+/* Blue */
+/* Blue */
+/* Blue */
+/* Grey */
+/* Blue */
 .fa-star{width: 12px; height: 12px; left: 152px;
   bottom: 12px; left: 0%;
   right: 0%;
@@ -249,6 +370,12 @@ display: inline-block;}
 
 /* Card/Title */
 
+/* Nuit à partir de 25€ */
+
+/* Hôtel du port */
+
+/* Nuit à partir de 52€ */
+
 /* Hôtel Les mouettes */
 
 /* Hôtel de la mer */
@@ -257,6 +384,7 @@ display: inline-block;}
 
 /* Auberge Le Panier */
 
+/* Afficher plus */
 
 
 .heb {width: 75%;
@@ -276,11 +404,22 @@ flex-wrap:wrap;}
 
 .afficher {flex-direction:column;}
 
+/* Offers/Sponsored */
+
 /* Les plus populaires */
+
+/* Title/Section */
+/* Blue */
 
 /* Card/Sponsored */
 
+/* Rectangle 24 */
+
+/* White */
+
 /* Rectangle 23 */
+
+/* White */
 
 /* Hôtel Le soleil du matin */
 
@@ -325,6 +464,8 @@ article {background: #FFFFFF; border-radius: 20px;}
 
 /* Rectangle 22 */
 
+/* White */
+
 /* Vieux Port */
 
 /* Fort de Pomègues */
@@ -343,8 +484,6 @@ article {background: #FFFFFF; border-radius: 20px;}
 
 .cardact {width:25%;}
 
-.cardact:hover {filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));}
-
 .imgact {width: 302px;border-radius: 20px;}
 
 .cardact + h3{width: 247px;
@@ -360,6 +499,8 @@ bottom: 20.51px;}
 /*Footer*/
 
 /* Rectangle 21 */
+/* Grey */
+
 
 /* À propos */
 
@@ -407,4 +548,12 @@ footer {background : #F2F2F2;
 /*@media screen and (min-width:768px){}*/
 
 /*3 mobile*/
+
+/* Rectangle 26 */
+/* Blue */
+
+/* Rectangle 27 */
+/* Grey */
+
 /*nav a:hover{text-decoration: underline;}*/
+
