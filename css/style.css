@@ -1,545 +1,323 @@
-
 /*font-family: 'Raleway' / normal;*/
 
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
-
   font-weight: 400;
-  src: url('http://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2'), 
-  format('woff2');}
+  src: url('http://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2'),
+    format('woff2');
+}
 
 /*color charte
 bleu = #0065FC
 bleu clair = #DEEBFF
 gris pour le fond = #F2F2F2*/
 
-/*body : police, largeur max*/
-
 /*deskstop*/
 /*@media screen and (min-width:992px;) {}*/
 
+/*body*/
 
-
-body {font-family: 'raleway'; max-width:1400px; 
+body {
+  font-family: 'Raleway';
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-left: 0.18%;
-right: 0.18%;
-top: 0%;
-bottom: 0%;}
+  display:flex;
+  flex-direction: column;
+  max-width: 1400px;
+}
 
-/*flex*/
-
-.container{display:flex;} 
 
 /*liens*/
 
-a {text-decoration: none;
-color:#000000;}
+a {
+  text-decoration: none;
+  color: #000000;
+}
 
 /*titres*/
 
-h1{font-weight: 700;
+h1 {
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;}
+}
 
-h2 {font-weight: 700;
-font-size: 22px;
-line-height: 26px;
-color: #000000;}
+h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
 
-h3
-{font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-color: #000000;}
-
-
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
 
 
 /*list*/
 
-li {list-style-type: none;}
+li {
+  list-style-type: none;
+}
 
 /*header*/
 
-/* Logo/Reservia */
+.header {width: 100%; justify-content: space-between;display:flex ; flex-direction:row;
+  margin-top: 19px;}
 
 /* logo */
 
-.logo{width: 61.09px;
+.logo {
+  width: 61.09px;
   height: 19px;
-  left: 0px;
-  top: 0px;
 }
 
 /*nav*/
 
-nav {
+.menu {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-text-align: center;
-height: 19px;
-left: 982px;
-top: 48px;
-float:right;
+  font-size: 16px; 
 }
 
-nav a:hover{color:#0065FC;
-  text-decoration: overline;} 
+nav a {padding-left:85px;}
 
-.a1 {
-  left: 36.22%;
-right: 34.12%;
-top: 0%;
-bottom: 0%;}
+nav a:hover {
+  color: #0065FC;
+  border-top:1px solid #0065FC;
+  padding-top: 10px;
+}
 
-.a2 {left: 83.46%;
-right: 0%;
-top: 0%;
-bottom: 0%;}
-
-/* Hébergements */
-/* Nav/Standard */
-
-/* Black */
-
-/* Blue */
-
-/* Rectangle 25 */
-
-/* Blue */
-
-/* Activités */
 
 /*icons*/
 
-i {color: #0065FC;}
+i {
+  color: #0065FC;
+}
 
 
-.fa-money-bill-wave{width: 22px; height: 16.26px;}
-.fa-person{width: 13.44px; height: 22px;}
-.fa-heart{width: 22px; height: 18.33px;}
-.fa-dog{width: 22px; height: 22px;}
+.fa-money-bill-wave {
+  width: 22px;
+  height: 16.26px;
+}
+
+.fa-person {
+  width: 13.44px;
+  height: 22px;
+}
+
+.fa-heart {
+  width: 22px;
+  height: 18.33px;
+}
+
+.fa-dog {
+  width: 22px;
+  height: 22px;
+}
 
 
+/*Recherche*/
+#recherche {width: 100%;}
 
+  /*formulaire*/
 
-  
-/*icon Pop*/
-.fa-chart-line {width: 18px; height: 15.75px; text-align: right;}
+  .formulaire {width: 33%;
+  border: 1px solid #F2F2F2;
+  box-sizing:content-box;
+  border-radius: 15px;}
 
-
-
-/* Trouvez votre hébergement pour des vacances de rêve */
-/* Title/Section */
-
-
-/* En plein centre-ville ou en pleine nature */
-/* Footer/Link */
-
-/*section recherche*/
-
-.recherche {width: 100%;
-  flex-direction:column;}
-
-   /* Input/MainLocation */
-
-   .mainlocation {width: 332px;
-height: 49px;
-left: 55px;
-top: 199px;}
-
-  /* Rectangle 13 */
-  /* White */
-  /* Grey */
-
-  form {left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: #FFFFFF;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px;}
-
-  /* Rectangle 14 */
-  /* Grey */
-  /* Grey */
-  .rect14 {left: 0%;
-  right: 84.94%;
-  top: 0%;
-  bottom: 0%;
+/* map-marker-alt */
+.fa-location-dot {
+  color: #000000;
   background: #F2F2F2;
   border: 1px solid #F2F2F2;
   border-radius: 15px 0px 0px 15px;}
-  
 
-/* map-marker-alt */
-/* Vector */
-.fa-location-dot {left: 5.42%;
-right: 90.36%;
-top: 32.65%;
-bottom: 30.61%;
-color: #000000;}
-
-  /* Marseille, France */ 
-  /* Black */
-input {
-    left: 20.18%;
-  right: 35.54%;
-  top: 28.57%;
-  bottom: 28.57%;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #000000;}
-input::placeholder  {opacity : 1;}
+/* Marseille, France */
+input {font-weight: 700;
+  font-size: 18px;}
+input::placeholder {opacity: 1;}
 
 /* Button */
-/* Auto layout */
-/* Blue */
-/* Blue */
-button 
-{flex-direction: row;
-align-items: center;
-padding: 15px 16px;
-gap: 10px;
-width: 49px;
-height: 49px;
-left: 282px;
-top: 0px;
-background: #0065FC;
-border: 1px solid #0065FC;
-border-radius: 15px;
-overflow-y:visible;
+.bouton {
+  align-items: center;
+  padding: 15px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  color: white;
 }
 
-/* White */
 
 
-/* Button/Search/Desktop */
+/* Filtres */
 
-/* Blue */
+.filtres {width:75%;
+  justify-content: space-between;
+display:flex;
+  flex-direction: row;
+}
 
-/* Blue */
-
-/* White */
-
-
-
-
-
-/* Rechercher */
-
-/* White */
+.filter {
+  box-sizing: border-box;
+  border: 2px solid #F2F2F2;
+  border-radius: 25px;
+  justify-content: center;}
 
 
+.filter:hover {
+  background: #DEEBFF;}
 
 
-
-  
- /* Filtres */
-
- /* FilterBar */
-
-
- /* Title/Filter */
-
-
- /* Filter */
- /* Blue */
- /* Blue */
-
- /* Frame 7 */
-
-
-/* Blue */
-
- /* Frame 6 */
- /* Black */
-
- /* Économique */
-/* Black */
-
- /* Blue */
-
-/* Familial */
-/* Black */
-
- /* Blue */
-
-
- /* Romantique */
- /* Black */
-
- /* Rectangle 17 */
-/* Black */
-
- /* Blue */
-/* Black */
-
- /* Blue */
- /* Blue */
- /* Blue */
- /* Blue */
- /* Blue */
-
- /* Animaux autorisés */
-
- /* Black */
- /* Blue */
-
-
-.filtres {justify-content: space-between; flex-direction:row;}
-
-.filter {box-sizing: border-box; border: 2px solid #D9D9D9; border-radius: 25px; justify-content: center; }
-
-
-.filter:hover {background: #DEEBFF;}
-
-/* Infobar */
-
-  /* Plus de 500 logements sont disponibles dans cette ville */
-
-  /* Information */
-  /* Blue */
+/* Information */
 
 /*icon Info*/
 
-/* Ellipse 11 */
-
-.fa-info{border: 1px solid #D9D9D9; text-align : center; border-radius: 100%; width: 24px; height: 24px;}
-
-
-
-/* Section/Offers */
-
-.hebpoprow {display: flex;
-  flex-direction:row;}
-
-  /* Offers/Main */
-
-  /* Section */
-
-  /* Rectangle 18 */
-    /* Grey */
-
+.fa-info {
+  border: 1px solid #F2F2F2;
+  text-align: center;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
 
 /*hebergements*/
+#hebergements{width: 100%;display: flex; gap: 50px;}
+
+article {
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.heb {
+  width: 75%;
+  flex-direction: column;
+  background: #F2F2F2;
+  border-radius: 20px;
+}
+
+  
+
+.articleheb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:0 auto;
+  flex-wrap: wrap;
+  width: calc(100% / 2);}
+  
+
+.imgheb {
+  width: 246px;
+  height: 124px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Afficher plus */
+
+.afficher {
+  flex-direction: column;
+}
+
+/*populaires*/
+
+.pop {
+  width: 25%;
+  flex-direction: column;
+  background: #F2F2F2;
+  border-radius: 20px;
+}
+
+/*.articlepop {justify-content: space-around;}*/
+
+/*icon Pop*/
+.fa-chart-line {padding-left: 100px;
+}
 
 
-/* Card/Main */
+.fa-star {
+  width: 12px;
+  height: 12px;
+  left: 152px;
+  bottom: 12px;
+}
+
+
+.cardpop {
+  display: flex;
+  flex-direction: row;}
+
+
+.hebpop {
+  background: #F2F2F2;
+  border-radius: 20px;
+}
+
+.imgpop {
+  width: 137px;
+  height: 144px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+
+
+
+/*Activités*/
+#activites { flex-direction: column;
+  width: 100%;}
+
+.articlesactivites {
+  display:flex; flex-direction: row;}
+
+.cardact {width: 25%;}
+
+.imgact {
+  width: 302px;
+  border-radius: 20px;
+}
+
+.cardact+h3 {
+  width: 247px;
+  height: 15px;
+  left: 19px;
+  bottom: 20.51px;
+}
+
+
+.imgactportparc {
+  height: 444.51px;
+}
+
+.imgactfortdame {
+  height: 445px;
+}
+
 
 /* Shadow/Card */
 .shadow:hover {filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));}
 
-
-/* Rectangle 19 */
-
-/* White */
-
-/* Rectangle 20 */
-
-/* White */
-
-/* Group 9 */
-.group9 {width: 204px;
-  height: 39px;
-  left: 16px;
-  top: 128px;}
-
-/* Stars */
-/* Blue */
-/* Blue */
-/* Blue */
-/* Blue */
-/* Grey */
-/* Blue */
-.fa-star{width: 12px; height: 12px; left: 152px;
-  bottom: 12px; left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;}
-
-/* Auberge la Canebière */
-
-/* Card/Title */
-
-/* Nuit à partir de 25€ */
-
-/* Hôtel du port */
-
-/* Nuit à partir de 52€ */
-
-/* Hôtel Les mouettes */
-
-/* Hôtel de la mer */
-
-/* Nuit à partir de 46€ */
-
-/* Auberge Le Panier */
-
-/* Afficher plus */
-
-
-.heb {width: 75%;
-flex-direction:column;
-left: 5%;
-right: 82.84%;
-top: 89.3%;
-bottom: 7.35%;
-}
-
-.articleheb {display: flex;
-  flex-direction:row;
-flex-wrap:wrap;}
-
-.imgheb {width: 246px; height: 124px;
-  border-radius: 20px 20px 0px 0px;}
-
-.afficher {flex-direction:column;}
-
-/* Offers/Sponsored */
-
-/* Les plus populaires */
-
-/* Title/Section */
-/* Blue */
-
-/* Card/Sponsored */
-
-/* Rectangle 24 */
-
-/* White */
-
-/* Rectangle 23 */
-
-/* White */
-
-/* Hôtel Le soleil du matin */
-
-/* Nuit à partir de 128€ */
-
-/* Chambres d’hôtes Au cœur de l’eau */
-
-/* Hôtel Bleu et Blanc */
-
-/* Nuit à partir de 68€ */
-
-.pop {width: 25%;
-  flex-direction:column;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  background: #F2F2F2;
-  border-radius: 20px;}
-
-
-  .articlepop {display: flex;
-    flex-direction:column;}
-
-    .articlepoprow {display: flex;
-      flex-direction:row;}
-
-
-.hebpop{background: #F2F2F2; border-radius: 20px;}
-
-.imgpop {width: 137px; height: 144px;border-radius: 20px 0px 0px 20px;}
-
-article {background: #FFFFFF; border-radius: 20px;}
-
-
-/* Section/Activités */
-
-/* Activités à Marseille */
-
-
-/* Card/Activity */
-
-/* Rectangle 22 */
-
-/* White */
-
-/* Vieux Port */
-
-/* Fort de Pomègues */
-
-/* Parc national des Calanques */
-
-/* Notre-Dame-de-la-Garde */
-
-
-.acti {width: 100%;
-  display: flex;
-  flex-direction:column;}
-
-.articleact {display: flex;
-    flex-direction:row;}
-
-.cardact {width:25%;}
-
-.imgact {width: 302px;border-radius: 20px;}
-
-.cardact + h3{width: 247px;
-height: 15px;
-left: 19px;
-bottom: 20.51px;}
-
-
-.imgactportparc {height:444.51px;}
-
-.imgactfortdame {height:445px;}
-
 /*Footer*/
 
-/* Rectangle 21 */
-/* Grey */
+footer {
+  background: #F2F2F2;
+}
 
+.menufooter {
+  display:flex;
+  flex-direction:row;
+  justify-content: start;
+  gap: 250px;
+}
 
-/* À propos */
-
-/* Fonctionnement du site */
-
-/* Footer/Link */
-
-/* Conditions générales */
-
-/* Données et confidentialité */
-
-
-/* Nos hébergements */
-
-/* Charte qualité */
-
-/* Proposer votre hôtel */
-
-/* Assistance */
-/* Centre d’aide */
-/* Nous contacter */
-
-footer {background : #F2F2F2;
-  left: 3.33%;
-  right: 3.68%;
-  top: 0%;
-  bottom: -10.84%;}
-
-.h2footer {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;}
-
-
- .menufooter{justify-content: space-between;}
-
- 
-
- .menufooter, ul {padding:0px;}
+.menufooter,
+ul {
+  padding: 0px;
+}
 
 /*Media queries*/
 
@@ -556,4 +334,3 @@ footer {background : #F2F2F2;
 /* Grey */
 
 /*nav a:hover{text-decoration: underline;}*/
-
