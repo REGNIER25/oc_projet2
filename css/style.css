@@ -1,5 +1,4 @@
 /*font-family: 'Raleway' / normal;*/
-
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -8,16 +7,10 @@
     format('woff2');
 }
 
-/*color charte
-bleu = #0065FC
-bleu clair = #DEEBFF
-gris pour le fond = #F2F2F2*/
-
 /*deskstop*/
 /*@media screen and (min-width:992px;) {}*/
 
 /*body*/
-
 body {
   font-family: 'Raleway';
   box-sizing: border-box;
@@ -28,39 +21,12 @@ body {
   max-width: 1400px;
 }
 
-
 /*liens*/
+a {text-decoration: none;
+  color: #000000;}
 
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-/*titres*/
-
-h1 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-
-/*list*/
-
-li {
-  list-style-type: none;
+/*listes*/
+li {list-style-type: none;
 }
 
 /*header*/
@@ -77,10 +43,6 @@ li {
 
 /*nav*/
 
-.menu {
-  font-weight: 400;
-  font-size: 16px; 
-}
 
 nav a {padding-left:85px;}
 
@@ -91,68 +53,47 @@ nav a:hover {
 }
 
 
-/*icons*/
+/*icones*/
 
-i {
-  color: #0065FC;
-}
-
-
-.fa-money-bill-wave {
-  width: 22px;
-  height: 16.26px;
-}
-
-.fa-person {
-  width: 13.44px;
-  height: 22px;
-}
-
-.fa-heart {
-  width: 22px;
-  height: 18.33px;
-}
-
-.fa-dog {
-  width: 22px;
-  height: 22px;
-}
-
+i {color: #0065FC;}
 
 /*Recherche*/
 #recherche {width: 100%;}
 
   /*formulaire*/
 
-  .formulaire {width: 33%;
+  .formulaire {width: 29%;
   border: 1px solid #F2F2F2;
   box-sizing:content-box;
   border-radius: 15px;}
 
-/* map-marker-alt */
+
+/* icone location */
 .fa-location-dot {
+  width: 40px;
+  padding: 16px 16px;
+  text-align: center;
   color: #000000;
-  background: #F2F2F2;
-  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 15px 0px 0px 15px;}
 
+
 /* Marseille, France */
-input {font-weight: 700;
-  font-size: 18px;}
+input {font-weight: 700; border: none;}
 input::placeholder {opacity: 1;}
+
 
 /* Button */
 .bouton {
   align-items: center;
   padding: 15px 16px;
-  font-size: 18px;
   font-weight: 700;
   background: #0065FC;
   border: 1px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
   color: white;
 }
-
+  
 
 
 /* Filtres */
@@ -164,10 +105,12 @@ display:flex;
 }
 
 .filter {
-  box-sizing: border-box;
+  box-sizing: content-box;
+margin:0 auto;
+padding:0 auto;
   border: 2px solid #F2F2F2;
   border-radius: 25px;
-  justify-content: center;}
+  justify-content: space-around;}
 
 
 .filter:hover {
@@ -176,15 +119,13 @@ display:flex;
 
 /* Information */
 
-/*icon Info*/
+/*icone information*/
 
 .fa-info {
   border: 1px solid #F2F2F2;
   text-align: center;
-  border-radius: 100%;
-  width: 24px;
-  height: 24px;
-}
+  border-radius: 100%;}
+
 
 /*hebergements*/
 #hebergements{width: 100%;display: flex; gap: 50px;}
@@ -194,6 +135,9 @@ article {
   border-radius: 20px;
 }
 
+
+
+
 .heb {
   width: 75%;
   flex-direction: column;
@@ -201,7 +145,7 @@ article {
   border-radius: 20px;
 }
 
-  
+
 
 .articleheb {
   display: flex;
@@ -209,12 +153,10 @@ article {
   justify-content: space-around;
   margin:0 auto;
   flex-wrap: wrap;
-  width: calc(100% / 2);}
+  width: calc(75% / 3);}
   
 
 .imgheb {
-  width: 246px;
-  height: 124px;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -233,79 +175,58 @@ article {
   border-radius: 20px;
 }
 
+
 /*.articlepop {justify-content: space-around;}*/
 
-/*icon Pop*/
-.fa-chart-line {padding-left: 100px;
-}
+/*icone populaire*/
+.fa-chart-line {padding-left: 100px;}
 
-
-.fa-star {
-  width: 12px;
-  height: 12px;
-  left: 152px;
-  bottom: 12px;
-}
+/*icone star*/
 
 
 .cardpop {
   display: flex;
   flex-direction: row;}
 
-
-.hebpop {
-  background: #F2F2F2;
-  border-radius: 20px;
-}
-
 .imgpop {
-  width: 137px;
-  height: 144px;
   border-radius: 20px 0px 0px 20px;
 }
 
 
-
-
 /*Activités*/
+
 #activites { flex-direction: column;
   width: 100%;}
+
+  /*titleh3activites*/
+
+  .titreactivites {padding-left: 18px;}
+
+
+  .cardact {width: 25%;}
+
+
 
 .articlesactivites {
   display:flex; flex-direction: row;}
 
-.cardact {width: 25%;}
 
 .imgact {
-  width: 302px;
   border-radius: 20px;
 }
 
-.cardact+h3 {
-  width: 247px;
-  height: 15px;
-  left: 19px;
-  bottom: 20.51px;
-}
 
-
-.imgactportparc {
-  height: 444.51px;
-}
-
-.imgactfortdame {
-  height: 445px;
-}
 
 
 /* Shadow/Card */
+/*effets shadow à voir*/
 .shadow:hover {filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));}
+
 
 /*Footer*/
 
-footer {
-  background: #F2F2F2;
-}
+footer {background: #F2F2F2;}
+
 
 .menufooter {
   display:flex;
