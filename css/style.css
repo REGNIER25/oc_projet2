@@ -58,11 +58,11 @@ nav a:hover {
 i {color: #0065FC;}
 
 /*Recherche*/
-#recherche {width: 100%;}
+#recherche {width: 100%; }
 
   /*formulaire*/
 
-  .formulaire {width: 29%;
+  .formulaire {width: 40%;
   border: 1px solid #F2F2F2;
   box-sizing:content-box;
   border-radius: 15px;}
@@ -70,8 +70,8 @@ i {color: #0065FC;}
 
 /* icone location */
 .fa-location-dot {
-  width: 40px;
-  padding: 16px 16px;
+  width: 10%;
+  padding: 17px 5px 17px 5px;
   text-align: center;
   color: #000000;
   background-color: #F2F2F2;
@@ -79,14 +79,17 @@ i {color: #0065FC;}
 
 
 /* Marseille, France */
-input {font-weight: 700; border: none;}
+input {
+  width: 50%;
+  font-weight: 700; border: none;}
 input::placeholder {opacity: 1;}
 
 
 /* Button */
 .bouton {
+  width:20%;
   align-items: center;
-  padding: 15px 16px;
+  padding: 16px 17px;
   font-weight: 700;
   background: #0065FC;
   border: 1px solid #0065FC;
@@ -95,23 +98,27 @@ input::placeholder {opacity: 1;}
 }
   
 
-
 /* Filtres */
 
 .filtres {width:75%;
-  justify-content: space-between;
 display:flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
 .filter {
-  box-sizing: content-box;
-margin:0 auto;
-padding:0 auto;
+  align-items: center;
   border: 2px solid #F2F2F2;
   border-radius: 25px;
-  justify-content: space-around;}
+  font-weight: 700;
+  padding: 15px 15px 5px 20px;
+}
 
+
+/*icones filtres*/
+
+.ifiltres {padding-right: 10px;}
 
 .filter:hover {
   background: #DEEBFF;}
@@ -122,100 +129,102 @@ padding:0 auto;
 /*icone information*/
 
 .fa-info {
+  margin-right: 20px;
+  padding:10px;
+  font-size: 10px;
   border: 1px solid #F2F2F2;
   text-align: center;
   border-radius: 100%;}
 
 
+
+
 /*hebergements*/
-#hebergements{width: 100%;display: flex; gap: 50px;}
+#hebergements{ width: 100%;  height: 100%; display: flex; gap: 50px;}
 
-article {
-  background: #FFFFFF;
-  border-radius: 20px;
-}
-
-
-
-
-.heb {
+.heb {padding:30px;
+  background: #F2F2F2;
   width: 75%;
   flex-direction: column;
-  background: #F2F2F2;
   border-radius: 20px;
 }
 
+  .articleheb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;}
+    /*width: calc(100% /1);*/
 
-
-.articleheb {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin:0 auto;
-  flex-wrap: wrap;
-  width: calc(75% / 3);}
-  
+  .cardheb {background: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
 
 .imgheb {
-  border-radius: 20px 20px 0px 0px;
-}
+  width: 246px;
+  height: 124px;
+  border-radius : 20px 20px 0px 0px;
+  object-fit: fill;}
 
-/* Afficher plus */
+  /*Afficher plus*/
 
-.afficher {
-  flex-direction: column;
-}
+  .afficher {margin-top: 20px;}
+
 
 /*populaires*/
 
-.pop {
+.pop {padding:30px;
   width: 25%;
+  height: 100%;
   flex-direction: column;
   background: #F2F2F2;
-  border-radius: 20px;
-}
+  border-radius: 20px;}
 
 
-/*.articlepop {justify-content: space-around;}*/
+.articlepop {height: 100%;}
+   /*height: calc(100% /1);*/
+
 
 /*icone populaire*/
-.fa-chart-line {padding-left: 100px;}
-
-/*icone star*/
+.fa-chart-line {padding-left: 70px;}
 
 
-.cardpop {
+.cardpop {background: white;
   display: flex;
-  flex-direction: row;}
-
-.imgpop {
-  border-radius: 20px 0px 0px 20px;
+  flex-direction: row;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 10px;
 }
+
+
+
+.imgpop {object-fit: fill;
+  width: 137px;
+  height: 144px;
+  border-radius : 20px 0px 0px 20px;
+}
+
 
 
 /*Activités*/
 
-#activites { flex-direction: column;
-  width: 100%;}
+#activites { flex-direction: column; height: 100%; width: 100%;}
 
   /*titleh3activites*/
 
   .titreactivites {padding-left: 18px;}
 
-
-  .cardact {width: 25%;}
-
-
+  .cardact {width: 25%; border-radius: 20px;} 
 
 .articlesactivites {
   display:flex; flex-direction: row;}
 
-
-.imgact {
-  border-radius: 20px;
-}
-
-
+.imgact {object-fit: fill;
+  width: 302px;
+  height: 444px;}
 
 
 /* Shadow/Card */
@@ -225,7 +234,7 @@ article {
 
 /*Footer*/
 
-footer {background: #F2F2F2;}
+.footer {background: #F2F2F2;}
 
 
 .menufooter {
