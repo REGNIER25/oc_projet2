@@ -188,8 +188,8 @@ display:flex;
   /*Afficher plus*/
 
   .afficher {
+    padding-top: 30px;
     padding-left:20px;
-    height : 20%;
     font-weight: 700;}
 
 
@@ -211,7 +211,7 @@ justify-content: space-between;
 .fa-chart-line {font-size:22px;}
 
 .articlepop {padding-top: 30px;
-height: 33%;}
+height: 90%;}
 
 
 .apop {
@@ -221,13 +221,13 @@ height: 33%;}
 .cardpop {background: white;
   border-radius: 20px;
   display: flex;
-  padding: 10px;
   height: 150px;
 }
 
-/*margin-bottom sur les deux premières cartes pop*/
+/*sur les deux premières images pop*/
 
-.cartepop {margin-bottom: 30px;}
+.margepop {margin-bottom: 70px;}
+
 
 
 .imgpop {object-fit: cover;
@@ -255,16 +255,17 @@ height: 33%;}
 
 .aact {width:25%;}
 
-.cardact {background: white; border-radius: 20px; height: 100%; } 
+.cardact {background: white; border-radius: 20px; height: 100%;}
 
 .imgact {object-fit: cover;
   border-radius : 20px 20px 0px 0px;
   width: 100%;
+  height: 90%;
 }
 
 /*titres activités h3*/
 
-.titreact {padding-left:20px;}
+.titreact {padding-left:20px; height:10%}
 
 
 /* Shadow*/
