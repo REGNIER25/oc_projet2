@@ -67,7 +67,7 @@ i {color: #0065FC;}
 
 /* icone location */
 .fa-location-dot {
-  width: 10%;
+  width: 7%;
   padding: 17px 5px 17px 5px;
   text-align: center;
   color: #000000;
@@ -76,29 +76,35 @@ i {color: #0065FC;}
 
 
 /* Marseille, France */
-input {border: 1px solid #F2F2F2;
+input {width: 40%;
+  border: 1px solid #F2F2F2;
   border-left:none;
   border-right: none;
+  margin-left:5px;
   font-weight: 700;}
 input::placeholder {opacity: 1;}
 
 
 /* Button */
 .bouton {
-  width:30%;
+  width:20%;
   align-items: center;
-  padding: 16px 17px;
+  padding: 10px;
   font-weight: 700;
   background: #0065FC;
   border: 1px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
   color: white;}
 
+  /*icone loupe mobile*/
+
+.loupe {display:none;}
+
 .fa-magnifying-glass{
   background: #0065FC;
   border: 1px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
-  color: #0065FC;}
+  color: white;}
 
   
 
@@ -113,37 +119,39 @@ justify-content: space-between;
   margin-top: 25px;
 }
 
-
-
 .filter {border: 2px solid #F2F2F2;
   border-radius: 25px;
   font-weight: 700;
   background-color: white;
+  height: 40px;
 }
 
 .filter:hover {
   background: #DEEBFF;}
 
-/*icones filtres*/
 
 .ifiltres {padding-left: 10px;
 padding-right:10px;
 font-size: 15px;}
 
 
-/* Information */
+/*Information*/
 
-/*icone information*/
+.information{display: flex;flex-direction: row;
+  width:50%;
+  justify-content:space-between;}
 
-.fa-info {
-  margin-right: 20px;
-  padding:10px;
-  font-size: 10px;
-  border: 1px solid #F2F2F2;
-  text-align: center;
-  border-radius: 100%;}
+.cercle {display: flex;
+  border-radius: 50%;
+  width: 20px;
+  height:20px;
+  align-items: center;
+  justify-content: center;
+    border: 1px solid #F2F2F2;
+  }
 
-
+.fa-info {text-align: center;
+  font-size: 10px;}
 
 
 /*hebergements*/
@@ -160,24 +168,22 @@ font-size: 15px;}
 
 .titreheb {padding-left:20px;}
 
-.articleheb {padding-top: 30px;
-  height : 80%;
+.articleheb {margin-top: 30px;
+  row-gap: 30px;
 display:flex;
   flex-direction: row;
   Flex-wrap: wrap;
-  justify-content: space-around;
-  }
- /* width: calc(100% - 80px);*/
+  justify-content: space-between;
+  width: calc(100% / 3 -30px);}
 
-
-.aheb {width:30%;}
+.aheb {width:33%;margin-bottom: 30px;
+}
 
   
   .cardheb {background: white;
     padding: 10px;
     border-radius: 20px;
-    margin-bottom: 30px;
-  }
+    }
 
 .imgheb {
   width: 100%;
@@ -187,9 +193,7 @@ display:flex;
 
   /*Afficher plus*/
 
-  .afficher {
-    padding-top: 30px;
-    padding-left:20px;
+  .afficher {margin-top: 30px;
     font-weight: 700;}
 
 
@@ -207,11 +211,14 @@ display:flex;
 .titrepop{display:flex;
 justify-content: space-between;
 }
+
 /*icone populaire*/
 .fa-chart-line {font-size:22px;}
 
-.articlepop {padding-top: 30px;
-height: 90%;}
+.articlepop {display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+gap: 30px;}
 
 
 .apop {
@@ -224,10 +231,6 @@ height: 90%;}
   height: 150px;
 }
 
-/*sur les deux premières images pop*/
-
-.margepop {margin-bottom: 70px;}
-
 
 
 .imgpop {object-fit: cover;
@@ -238,8 +241,7 @@ height: 90%;}
 
 .bloctextpop {width:60%;padding: 10px;}
 
-.textpop{height:80%; line-height: 1em;
-}
+.textpop{height:80%;}
 
 /*icone star*/
 .star {height:20%;}
@@ -265,7 +267,7 @@ height: 90%;}
 
 /*titres activités h3*/
 
-.titreact {padding-left:20px; height:10%}
+.titreact {padding-left:20px;}
 
 
 /* Shadow*/
@@ -293,10 +295,10 @@ ul {
 /*Media queries*/
 
 /*2 tablette*/
-/*@media screen and (min-width:992px){}
+/*@media screen and (max-width:992px){}
 
 /*3 mobile*/
-/*@media screen and (min-width:768px) 
+/*@media screen and (max-width:768px) 
 {.header {flex-direction:column;} .header, a {align-items: center;} 
 nav {border-bottom : 2px solid #F2F2F2 } 
 nav a:hover {color: #0065FC; border-bottom:2px solid #0065FC;}
