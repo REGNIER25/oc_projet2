@@ -17,6 +17,26 @@ body {
   max-width: 1400px;
 }
 
+/*icones*/
+
+i {color: #0065FC;}
+
+/*listes*/
+li {list-style-type: none;
+}
+
+/*header*/
+
+.header {width: 100%; justify-content: space-between;display:flex ; flex-direction:row;
+  margin-top: 19px;}
+
+/* logo */
+
+.logo {width: 60px; height: 20px;}
+
+/*nav*/
+nav a {padding: 0px 50px;}
+
 /*liens*/
 
 a {text-decoration: none;
@@ -30,39 +50,11 @@ nav a:hover {
 }
 
 
-
-/*listes*/
-li {list-style-type: none;
-}
-
-/*header*/
-
-.header {width: 100%; justify-content: space-between;display:flex ; flex-direction:row;
-  margin-top: 19px;}
-
-/* logo */
-
-.logo {
-  width: 60px;
-  height: 20px;
-}
-
-/*nav*/
-nav a {padding: 0px 50px;}
-
-/*main*/
-.main {margin-top: 50px;}
-
-/*icones*/
-
-i {color: #0065FC;}
-
 /*Recherche*/
 #recherche {width: 100%; }
 
-  /*formulaire*/
-
-  form{display:flex;border-radius: 15px;width: 40%;}
+/*formulaire*/
+  .formulaire{display:flex;border-radius: 15px;width: 40%;}
 
 
 /* icone location */
@@ -108,22 +100,17 @@ input::placeholder {opacity: 1;}
 
 /* Filtres */
 
-/*titre h2 filtres*/
-
-.titrefiltres {margin:0;}
-
-.filtres {width:65%;
+.filtres {width:55%;
 display:flex;
 justify-content: space-between;
-  flex-direction: row;
-  margin-top: 25px;
-}
+  margin-top: 30px;}
+
+.titrefiltres {margin:0; font-weight: 700;}
 
 .filter {border: 2px solid #F2F2F2;
   border-radius: 25px;
   font-weight: 700;
   background-color: white;
-  height: 40px;
 }
 
 .filter:hover {
@@ -137,9 +124,7 @@ font-size: 15px;}
 
 /*Information*/
 
-.information{display: flex;flex-direction: row;
-  width:50%;
-  justify-content:space-between;}
+.information{display: flex;margin-top: 30px; line-height:30px;}
 
 .cercle {display: flex;
   border-radius: 50%;
@@ -150,8 +135,12 @@ font-size: 15px;}
     border: 1px solid #F2F2F2;
   }
 
-.fa-info {text-align: center;
-  font-size: 10px;}
+.fa-info {font-size: 10px;}
+
+  .texteinfo {padding-left:10px;}
+
+  /*main*/
+.main {margin-top: 50px;}
 
 
 /*hebergements*/
@@ -161,12 +150,8 @@ font-size: 15px;}
   background: #F2F2F2;
   width: 75%;
   flex-direction: column;
-  border-radius: 20px;
-}
+  border-radius: 20px;}
 
-/*titres heb h2*/
-
-.titreheb {padding-left:20px;}
 
 .articleheb {margin-top: 30px;
   row-gap: 30px;
@@ -174,7 +159,7 @@ display:flex;
   flex-direction: row;
   Flex-wrap: wrap;
   justify-content: space-between;
-  width: calc(100% / 3 - 30px);}
+  width: calc(100% / 3 -30px);}
 
 .aheb {width:33%;margin-bottom: 30px;}
 
@@ -197,20 +182,19 @@ display:flex;
 /*populaires*/
 
 .pop {padding:30px;
+  display: flex;
   flex-direction: column;
   width: 25%;
   background: #F2F2F2;
-  border-radius: 20px;
-}
+  border-radius: 20px;}
 
 /*titres pop*/
-
-.titrepop{display:flex;
-justify-content: space-between;
-}
-
+.titrepop{display: flex;
+  flex-direction: row;
+  line-height:30px;
+  justify-content: space-between;}
 /*icone populaire*/
-.fa-chart-line {font-size:22px;}
+.fa-chart-line {font-size:15px;}
 
 .articlepop {display: flex;
   flex-direction: column;
@@ -218,22 +202,18 @@ justify-content: space-between;
 gap: 30px;}
 
 
-.apop {
-  width:100%;}
+.apop {width:100%;}
 
 
 .cardpop {background: white;
   border-radius: 20px;
   display: flex;
-  height: 150px;
-}
-
+  height: 150px;}
 
 
 .imgpop {object-fit: cover;
   width: 40%;
-  border-radius : 20px 0px 0px 20px;
-}
+  border-radius : 20px 0px 0px 20px;}
 
 
 .bloctextpop {width:60%;padding: 10px;}
@@ -294,9 +274,10 @@ ul {
 
 /*3 mobile*/
 @media screen and (max-width:768px) 
-{.header {flex-direction:column;} .header, a {align-items: center;} 
-nav {border-bottom : 2px solid #F2F2F2 } 
-nav a:hover {color: #0065FC; border-bottom:2px solid #0065FC;}
+{.header {flex-direction:column;} 
+.header, a {align-items: center;} 
+nav {border-bottom : 2px solid #F2F2F2; } 
+nav a:hover {color: #0065FC; border-bottom:2px solid #0065FC;border-top: none;}
 .formulaire {width: 100%;}
 .loupe {display:block;}
 .rechercher {display:none;}
@@ -306,8 +287,11 @@ nav a:hover {color: #0065FC; border-bottom:2px solid #0065FC;}
 .filtres h2 {width: 100%;}
 .filter {width: 40%;font-weight: 400;}
 #hebergements {flex-direction: column-reverse;}
+.articleheb {flex-direction: column;}
+.afficher {display: none;}
+.articleactivites {flex-direction: column;}
+.menufooter {flex-direction:column;}
 }
-
   
   
   
