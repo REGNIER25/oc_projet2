@@ -74,8 +74,7 @@ input {width: 40%;
   border-right: none;
   font-weight: 700;
 }
-/*input::placeholder { color:black;opacity: 1; padding-left:20px; }*/
-*:-ms-input-placeholder {color:black;opacity: 1; padding-left:20px; }
+input::placeholder { color:black;opacity: 1; white-space: pre; }
 
 /* Button */
 .bouton {
@@ -163,7 +162,9 @@ display:flex;
   flex-direction: row;
   Flex-wrap: wrap;
   justify-content: space-between;
-  width: calc(100% / 3 + 500px);}
+  }
+  /*width: calc((100% / 3) - 30px);*/
+ /*width: calc(100% / 3 - 30px); */
 
 .aheb {width:33%;margin-bottom: 30px;}
 
@@ -294,20 +295,30 @@ ul {
 
 /*3 mobile*/
 @media screen and (max-width:768px) 
-{.header {flex-direction:column;} 
-.header, a {align-items: center;} 
-nav {border-bottom : 2px solid #F2F2F2; } 
+{.header {flex-direction:column; align-items: center;} 
+nav {border-bottom : 2px solid #F2F2F2; width: 100%;}  
 nav a:hover {color: #0065FC; border-bottom:2px solid #0065FC;border-top: none;}
+nav a {padding: 0px 80px;}
+
 .formulaire {width: 100%;}
 .loupe {display:block;}
 .rechercher {display:none;}
 .fa-magnifying-glass{color:white;}
-.filtres {width:100%; flex-wrap: wrap; justify-content: space-evenly;}
+.bouton {width:10%;}
+
+
+.filtres {width:100%; flex-wrap: wrap; justify-content: space-around; gap:10px}
 .filtres h2 {width: 100%;}
-.filter {width: 40%;font-weight: 400;}
+.filter {width:40%;font-weight: 600; text-align: start;}
+.ifiltres {padding-left:none;
+  padding-right:15px;}
 #hebergements {flex-direction: column-reverse;}
+.articlepop {display:block;}
+.articleheb {display:flex; flex-direction: column;}
+.aheb {width:100%;}
 .articleheb {flex-direction: column;}
 .afficher {display: none;}
+.aact {width:100%;}
 .articleactivites {flex-direction: column;}
 .menufooter {flex-direction:column;}
 }
