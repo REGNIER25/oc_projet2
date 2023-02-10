@@ -213,7 +213,6 @@ input::placeholder {
 
 .articleheb {
   margin-top: 30px;
-  row-gap: 30px;
   display: flex;
   flex-direction: row;
   Flex-wrap: wrap;
@@ -380,11 +379,11 @@ input::placeholder {
 
 
 /* Shadow*/
-.shadow {
-  filter: drop-shadow(30px 30px 30px#F2F2F2);
+.shadow {filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  
 }
 
-
+/*filter: drop-shadow(0px 30px 30px 0px#F2F2F2);*/
 /*Footer*/
 
 .footer {
@@ -413,13 +412,15 @@ ul {
     flex-direction: column;
   }
 
-  .heb {
-    width: 100%;
+  body{width : 820px;}
+
+  .bouton {
+    width: 30%;
   }
 
-  .pop {
+
+  .pop {width:100% ;
     flex-direction: column;
-    width: 100%;
   }
 
   .articlepop {
@@ -449,7 +450,10 @@ ul {
     padding: 0px 80px;
   }
 
-  .formulaire {
+  .titrepage{display:flex;
+    flex-direction: column;}
+
+  .formulaire {justify-content: center;
     width: 100%;
   }
 
@@ -466,7 +470,7 @@ ul {
   }
 
   .bouton {
-    width: 10%;
+    width: 7%;
   }
 
 
@@ -503,6 +507,7 @@ ul {
   .articleheb {
     display: flex;
     flex-direction: column;
+   
   }
 
   .aheb {
