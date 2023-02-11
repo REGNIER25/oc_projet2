@@ -1,3 +1,5 @@
+/*body*/
+
 /*font-family: 'Raleway' / normal;*/
 @font-face {
   font-family: 'Raleway';
@@ -137,6 +139,7 @@ input::placeholder {
 .titrefiltres {
   margin: 0;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .filter {
@@ -229,6 +232,9 @@ input::placeholder {
 
 .cardheb {
   background: white;
+  border: 5px white solid;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .texteheb {
@@ -305,12 +311,16 @@ input::placeholder {
   background: white;
   display: flex;
   height: 150px;
+  border: 5px white solid;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 
 .imgpop {
   object-fit: cover;
   width: 40%;
+  
 }
 
 
@@ -323,12 +333,11 @@ input::placeholder {
   margin: 0;
 }
 
-/*.textpop {padding-top: -30px;}*/
+.textpop {height: 90%;}
 
 /*icone star pop*/
-.starpop {
-  position: absolute;
-  top: 80%;
+/*.starpop {
+  padding-bottom: 0;
 }
 
 
@@ -379,11 +388,8 @@ input::placeholder {
 
 
 /* Shadow*/
-.shadow {filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  
-}
+.shadow {box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);}
 
-/*filter: drop-shadow(0px 30px 30px 0px#F2F2F2);*/
 /*Footer*/
 
 .footer {
@@ -406,18 +412,22 @@ ul {
 
 /*Media queries*/
 
-/*2 tablette*/
+/*tablette*/
 @media screen and (max-width:992px) {
   #hebergements {
     flex-direction: column;
   }
 
-  body{width : 820px;}
 
   .bouton {
     width: 30%;
   }
 
+  /*heb tab*/
+
+  .heb{width: 100%;}
+
+  /*pop tab*/
 
   .pop {width:100% ;
     flex-direction: column;
@@ -426,9 +436,28 @@ ul {
   .articlepop {
     flex-direction: row;
   }
+
+  /*img act tab*/
+  .imgact {
+    height: 200px;
+  }
+
+/*footer tab*/
+
+.footer {
+  padding: 20px;
 }
 
-/*3 mobile*/
+
+.menufooter {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+}
+
+/*mobile*/
 @media screen and (max-width:768px) {
   .header {
     flex-direction: column;
@@ -452,6 +481,10 @@ ul {
 
   .titrepage{display:flex;
     flex-direction: column;}
+
+     /*formulaire mob*/
+
+ 
 
   .formulaire {justify-content: center;
     width: 100%;
@@ -500,8 +533,18 @@ ul {
     flex-direction: column-reverse;
   }
 
+  
+
   .articlepop {
     display: block;
+  }
+
+  /*heb mobile*/
+
+
+  .heb {
+    background: white;
+    width: 100%;
   }
 
   .articleheb {
@@ -522,6 +565,8 @@ ul {
     display: none;
   }
 
+/*activités mob*/
+
   .aact {
     width: 100%;
   }
@@ -529,6 +574,10 @@ ul {
   .articleactivites {
     flex-direction: column;
   }
+
+  /*footer mob*/
+
+  .footer {Width:100%;}
 
   .menufooter {
     flex-direction: column;
