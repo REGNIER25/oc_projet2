@@ -59,7 +59,7 @@ a {
 nav a {padding: 0px 50px; padding-top: 30px;}
 nav a:hover {
   color: #0065FC;
-  border-top: 2px solid #0065FC;}
+  border-top: 4px solid #0065FC;}
 
 
 
@@ -351,7 +351,6 @@ input::placeholder {
 }
 
 /*titre activités h2*/
-
 .titreact {margin:0;}
 
 .articleactivites {
@@ -413,23 +412,36 @@ ul {
 /*Media queries*/
 
 /*tablette*/
-@media screen and (max-width:992px) {
-  #hebergements {
-    flex-direction: column;
-  }
+@media screen and (max-width:992px) 
 
+
+
+
+{
+/*body tab*/
+body {
+  margin: 0px 40px 0px 40px;
+}
+  
+/*formulaire tab*/
 
   .bouton {
     width: 30%;
   }
 
+  /*section heb tab*/
+
+  #hebergements {
+    flex-direction: column;
+  }
+
   /*heb tab*/
 
-  .heb{width: 100%;}
+  .heb{width: 95%;}
 
   /*pop tab*/
 
-  .pop {width:100% ;
+  .pop {width:95% ;
     flex-direction: column;
   }
 
@@ -459,35 +471,55 @@ ul {
 
 /*mobile*/
 @media screen and (max-width:768px) {
+
+  
+  /*body mob*/
+
+  body {
+    margin: 0px 10px 0px 10px;
+  }
+  
+    /*header mob*/
+
   .header {
     flex-direction: column;
     align-items: center;
   }
 
-  nav {
-    border-bottom: 2px solid #F2F2F2;
+  /*nav mobile*/
+
+  nav {margin-top: 30px;}
+
+  nav a {flex-direction: row;
+    border-bottom: 3px solid #F2F2F2;
     width: 100%;
+    padding-bottom: 30px;
   }
 
-  nav a:hover {flex-direction: row;
+
+  nav a:hover {
     color: #0065FC;
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 3px solid #0065FC;
     border-top: none;
   }
 
-  nav a {
-    padding: 0px 80px;
-  }
 
-  .titrepage{display:flex;
-    flex-direction: column;}
+  /*titre page mob*/
+
+  .titrepage{width: 75%;}
 
      /*formulaire mob*/
 
- 
-
   .formulaire {justify-content: center;
     width: 100%;
+  }
+
+  .fa-location-dot {
+    width: 15%;
+  }
+
+   input {
+    width: 70%;
   }
 
   .loupe {
@@ -498,17 +530,17 @@ ul {
     display: none;
   }
 
-  .fa-magnifying-glass {
-    color: white;
-  }
 
   .bouton {
-    width: 7%;
+    width: 15%;
   }
+
+  
+
+  /*filtres mob*/
 
 
   .filtres {
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px
@@ -518,22 +550,31 @@ ul {
     width: 100%;
   }
 
-  .filter {
-    width: 40%;
+  .filter {width: 45%;
     font-weight: 600;
     text-align: start;
   }
 
   .ifiltres {
-    padding-left: none;
-    padding-right: 15px;
+    padding: none;
   }
+
+  /*Information mob*/
+
+.information {width:75%;
+}
+
+  /*section heb mob*/
 
   #hebergements {
     flex-direction: column-reverse;
   }
 
-  
+  /*pop mobile*/
+
+  .pop {
+    border-radius: 0px;
+  }
 
   .articlepop {
     display: block;
@@ -566,6 +607,9 @@ ul {
   }
 
 /*activités mob*/
+
+/*titre activités h2 mob*/
+.titreact {width: 50%;}
 
   .aact {
     width: 100%;
