@@ -1,13 +1,6 @@
 /*body*/
 
-/*font-family: 'Raleway' / normal;*/
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: url('http://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2'),
-    format('woff2');
-}
+/*font-family: 'Raleway'sur le HTML*/
 
 body {
   font-family: 'Raleway';
@@ -17,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1400px;
+
 }
 
 /*icones*/
@@ -56,10 +50,12 @@ a {
 
 /*nav*/
 
-nav a {padding: 0px 50px; padding-top: 30px;}
+
+nav a { padding: 30px 20px 0px 20px;}
 nav a:hover {
   color: #0065FC;
-  border-top: 4px solid #0065FC;}
+  border-top: 2px solid #0065FC;
+}
 
 
 
@@ -209,6 +205,8 @@ input::placeholder {
   border-radius: 20px;
 }
 
+/*titre heb h2*/
+
 .titreheb {
   margin: 0;
 }
@@ -240,6 +238,8 @@ input::placeholder {
 .texteheb {
   padding-left: 10px;
 }
+
+/*titres cartes heb h3*/
 
 .titrecarteheb {
   margin: 0;
@@ -278,7 +278,7 @@ input::placeholder {
   border-radius: 20px;
 }
 
-/*titres pop*/
+/*titre pop h2*/
 .titrepop {
   display: flex;
   justify-content: space-between;
@@ -287,7 +287,6 @@ input::placeholder {
 .titrepoptexte {
   margin: 0;
 }
-
 /*icone populaire*/
 .fa-chart-line {
   font-size: 25px;
@@ -329,16 +328,14 @@ input::placeholder {
   padding: 10px;
 }
 
+/*titres cartes pop h3*/
+
 .titrecartepop {
   margin: 0;
 }
 
 .textpop {height: 90%;}
 
-/*icone star pop*/
-/*.starpop {
-  padding-bottom: 0;
-}
 
 
 /*Activités*/
@@ -417,11 +414,10 @@ ul {
 
 
 
-{
-/*body tab*/
-body {
-  margin: 0px 40px 0px 40px;
-}
+{body{
+  width:100%;
+  overflow-x:hidden;
+  }
   
 /*formulaire tab*/
 
@@ -437,11 +433,11 @@ body {
 
   /*heb tab*/
 
-  .heb{width: 95%;}
+  .heb{width: 100%;}
 
   /*pop tab*/
 
-  .pop {width:95% ;
+  .pop {width:100% ;
     flex-direction: column;
   }
 
@@ -457,7 +453,7 @@ body {
 /*footer tab*/
 
 .footer {
-  padding: 20px;
+  padding : 20px;
 }
 
 
@@ -472,12 +468,10 @@ body {
 /*mobile*/
 @media screen and (max-width:768px) {
 
-  
-  /*body mob*/
-
-  body {
-    margin: 0px 10px 0px 10px;
-  }
+  body{
+    width:100%;
+    overflow-x:hidden;
+    }
   
     /*header mob*/
 
