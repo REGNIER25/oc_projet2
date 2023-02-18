@@ -1,0 +1,485 @@
+
+Désolé ! Les erreurs suivantes ont été trouvées : (1)
+URI : style.css
+624 		Propriété erronée : padding none n'est pas une valeur de padding : none
+
+↑ Haut
+
+W3Cx logo
+
+Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards. Find out more!
+
+Donate and help us build better tools for a better web.
+Avertissements (8)
+URI : style.css
+245 	.cardheb 	background-color et border-top-color sont de la même couleur
+245 	.cardheb 	background-color et border-right-color sont de la même couleur
+245 	.cardheb 	background-color et border-bottom-color sont de la même couleur
+245 	.cardheb 	background-color et border-left-color sont de la même couleur
+328 	.cardpop 	background-color et border-top-color sont de la même couleur
+328 	.cardpop 	background-color et border-right-color sont de la même couleur
+328 	.cardpop 	background-color et border-bottom-color sont de la même couleur
+328 	.cardpop 	background-color et border-left-color sont de la même couleur
+
+↑ Haut
+Votre feuille de style CSS validée :
+* {
+box-sizing : border-box;
+}
+body {
+font-family : 'Raleway';
+margin : 0 auto;
+padding : 0;
+display : flex;
+flex-direction : column;
+max-width : 1400px;
+}
+i {
+color : #0065FC;
+}
+li {
+list-style-type : none;
+}
+a {
+text-decoration : none;
+color : #000000;
+}
+.header {
+width : 100%;
+justify-content : space-between;
+display : flex;
+flex-direction : row;
+padding-top : 40px;
+}
+.logo {
+width : 60px;
+height : 20px;
+}
+nav a {
+padding : 30px 20px 0 20px;
+}
+nav a:hover {
+color : #0065FC;
+border-top : 2px solid #0065FC;
+}
+h1 {
+margin : 0;
+}
+#recherche {
+width : 100%;
+}
+.formulaire {
+display : flex;
+border-radius : 15px;
+width : 40%;
+}
+.fa-location-dot {
+width : 7%;
+padding : 17px 5px 17px 5px;
+text-align : center;
+color : #000000;
+background-color : #F2F2F2;
+border-radius : 15px 0 0 15px;
+}
+input {
+width : 40%;
+border : #F2F2F2 solid 1px;
+border-left : none;
+border-right : none;
+font-weight : 700;
+padding-left : 20px;
+}
+input::placeholder {
+color : black;
+opacity : 1;
+}
+.bouton {
+width : 20%;
+align-items : center;
+padding : 10px;
+font-weight : 700;
+background : #0065FC;
+border : #0065FC solid 1px;
+border-radius : 0 15px 15px 0;
+color : white;
+}
+.loupe {
+display : none;
+}
+.fa-magnifying-glass {
+background : #0065FC;
+border : #0065FC solid 1px;
+border-radius : 0 15px 15px 0;
+color : white;
+}
+.filtres {
+display : flex;
+align-items : center;
+margin-top : 30px;
+gap : 30px;
+}
+.titrefiltres {
+margin : 0;
+font-weight : 700;
+font-size : 18px;
+}
+.filter {
+border : #F2F2F2 solid 2px;
+border-radius : 25px;
+font-weight : 700;
+background-color : white;
+padding : 10px;
+font-size : 17px;
+}
+.filter:hover {
+background : #DEEBFF;
+}
+.ifiltres {
+padding-right : 10px;
+font-size : 15px;
+}
+.information {
+display : flex;
+margin-top : 30px;
+line-height : 30px;
+}
+.cercle {
+display : flex;
+border-radius : 50%;
+width : 25px;
+height : 25px;
+align-items : center;
+justify-content : center;
+border : #F2F2F2 solid 1px;
+}
+.fa-info {
+font-size : 10px;
+}
+.texteinfo {
+padding-left : 10px;
+}
+.main {
+margin-top : 50px;
+}
+#hebergements {
+margin-top : 50px;
+height : 100%;
+display : flex;
+gap : 50px;
+}
+.heb {
+padding : 30px;
+background : #F2F2F2;
+width : 75%;
+display : flex;
+flex-direction : column;
+border-radius : 20px;
+}
+.titreheb {
+margin : 0;
+font-size : 22px;
+}
+.articleheb {
+margin-top : 30px;
+display : flex;
+flex-direction : row;
+flex-wrap : wrap;
+justify-content : space-between;
+}
+.aheb {
+margin-bottom : 30px;
+width : calc((100% - 60px) / 3);
+}
+.cardheb {
+background : white;
+border : white solid 5px;
+border-radius : 20px;
+overflow : hidden;
+}
+.texteheb {
+padding-left : 10px;
+}
+.titrecarteheb {
+margin : 0;
+font-size : 16px;
+}
+.nuit {
+margin : 0;
+margin-top : 5px;
+margin-bottom : 5px;
+}
+.imgheb {
+width : 100%;
+height : 100px;
+object-fit : cover;
+}
+.star i:last-child {
+color : #F2F2F2;
+}
+.afficher {
+font-weight : 700;
+}
+.pop {
+padding : 30px;
+display : flex;
+flex-direction : column;
+width : 25%;
+background : #F2F2F2;
+border-radius : 20px;
+}
+.titrepop {
+display : flex;
+justify-content : space-between;
+}
+.titrepoptexte {
+margin : 0;
+font-size : 22px;
+}
+.fa-chart-line {
+font-size : 25px;
+}
+.articlepop {
+display : flex;
+flex-direction : column;
+padding-top : 30px;
+gap : 30px;
+}
+.apop {
+width : 100%;
+}
+.cardpop {
+background : white;
+display : flex;
+height : 150px;
+border : white solid 5px;
+border-radius : 20px;
+overflow : hidden;
+}
+.imgpop {
+object-fit : cover;
+width : 40%;
+}
+.bloctextpop {
+width : 60%;
+padding : 10px;
+}
+.titrecartepop {
+margin : 0;
+font-size : 16px;
+}
+.textpop {
+height : 90%;
+}
+#activites {
+margin-top : 50px;
+margin-bottom : 50px;
+display : flex;
+flex-direction : column;
+}
+.titreact {
+margin : 0;
+font-size : 22px;
+}
+.articleactivites {
+display : flex;
+flex-direction : row;
+padding-top : 30px;
+width : 100%;
+gap : 50px;
+}
+.aact {
+width : 25%;
+}
+.cardact {
+background : white;
+border-radius : 20px;
+height : 100%;
+}
+.imgact {
+object-fit : cover;
+border-radius : 20px 20px 0 0;
+width : 100%;
+height : 400px;
+}
+.titresact {
+padding-left : 20px;
+display : flex;
+flex-direction : row;
+font-size : 15px;
+}
+.shadow {
+box-shadow : 0 3px 15px 0 rgb(0, 0, 0, 0.2);
+}
+.footer {
+padding : 40px 40px 40px 40px;
+background : #F2F2F2;
+}
+.titresfooter {
+font-weight : 700;
+font-size : 18px;
+}
+.menufooter {
+display : flex;
+flex-direction : row;
+justify-content : start;
+gap : 250px;
+}
+.menufooter, ul {
+padding : 0;
+line-height : 25px;
+}
+@media screen and (max-width: 992px) {
+body {
+margin : 40px;
+}
+.formulaire {
+width : 70%;
+}
+.filter {
+font-size : 15px;
+}
+#hebergements {
+flex-direction : column;
+}
+.heb {
+width : 100%;
+}
+.titrecarteheb {
+font-size : 14px;
+}
+.pop {
+width : 100%;
+flex-direction : column;
+}
+.articlepop {
+flex-direction : row;
+}
+.titrecartepop {
+font-size : 14px;
+}
+.titresact {
+font-size : 14px;
+}
+.imgact {
+height : 200px;
+}
+.menufooter {
+justify-content : space-between;
+gap : 20px;
+}
+}
+@media screen and (max-width: 768px) {
+body {
+margin : 0;
+}
+.header {
+flex-direction : column;
+align-items : center;
+padding-top : 10px;
+width : 100%;
+}
+nav {
+margin-top : 30px;
+display : flex;
+width : 100%;
+}
+nav a {
+border-bottom : 3px solid #F2F2F2;
+padding-bottom : 30px;
+width : 100%;
+padding-left : 60px;
+}
+nav a:hover {
+color : #0065FC;
+border-bottom : 3px solid #0065FC;
+border-top : none;
+}
+.formulaire {
+justify-content : center;
+width : 100%;
+}
+.fa-location-dot {
+width : 10%;
+}
+input {
+width : 60%;
+}
+.loupe {
+display : block;
+}
+.rechercher {
+display : none;
+}
+.bouton {
+width : 10%;
+}
+.filtres {
+flex-wrap : wrap;
+justify-content : space-around;
+gap : 10px;
+}
+.filtres h2 {
+width : 100%;
+}
+.filter {
+width : 45%;
+text-align : start;
+font-size : 12px;
+}
+#hebergements {
+flex-direction : column-reverse;
+}
+.pop {
+border-radius : 0;
+}
+.articlepop {
+display : flex;
+flex-direction : column;
+gap : 30px;
+}
+.heb {
+padding-top : 0;
+background : white;
+padding-left : 20px;
+width : 100%;
+}
+.articleheb {
+display : flex;
+flex-direction : column;
+width : 100%;
+}
+.aheb {
+width : 100%;
+}
+.afficher {
+display : none;
+}
+#activites {
+width : 95%;
+padding-left : 20px;
+}
+.titreact {
+width : 50%;
+}
+.aact {
+width : 100%;
+}
+.articleactivites {
+display : flex;
+flex-direction : column;
+gap : 30px;
+width : 100%;
+}
+.imgact {
+height : 150px;
+}
+.footer {
+padding : 0;
+margin : 0;
+width : 100%;
+}
+.menufooter {
+flex-direction : column;
+}
+}
+

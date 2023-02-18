@@ -1,9 +1,11 @@
 /*body*/
 
 /*font-family: 'Raleway'sur le HTML*/
-* {box-sizing: border-box;
+* {
+  box-sizing: border-box;
 
 }
+
 body {
   font-family: 'Raleway';
   margin: 0 auto;
@@ -52,13 +54,21 @@ a {
 /*nav*/
 
 
-nav a { padding: 30px 20px 0px 20px;}
+nav a {
+  padding: 30px 20px 0px 20px;
+}
+
 nav a:hover {
   color: #0065FC;
   border-top: 2px solid #0065FC;
 }
 
 
+/*titre h1 page*/
+
+h1 {
+  margin: 0;
+}
 
 /*Recherche*/
 #recherche {
@@ -145,6 +155,7 @@ input::placeholder {
   font-weight: 700;
   background-color: white;
   padding: 10px;
+  font-size: 17px;
 }
 
 .filter:hover {
@@ -210,6 +221,7 @@ input::placeholder {
 
 .titreheb {
   margin: 0;
+  font-size: 22px;
 }
 
 
@@ -244,6 +256,7 @@ input::placeholder {
 
 .titrecarteheb {
   margin: 0;
+  font-size: 16px;
 }
 
 .nuit {
@@ -259,7 +272,9 @@ input::placeholder {
 }
 
 /*cinquième étoile grise*/
-.star i:last-child {color:#F2F2F2;}
+.star i:last-child {
+  color: #F2F2F2;
+}
 
 
 /*Afficher plus*/
@@ -287,7 +302,9 @@ input::placeholder {
 
 .titrepoptexte {
   margin: 0;
+  font-size: 22px;
 }
+
 /*icone populaire*/
 .fa-chart-line {
   font-size: 25px;
@@ -320,7 +337,7 @@ input::placeholder {
 .imgpop {
   object-fit: cover;
   width: 40%;
-  
+
 }
 
 
@@ -333,9 +350,12 @@ input::placeholder {
 
 .titrecartepop {
   margin: 0;
+  font-size: 16px;
 }
 
-.textpop {height: 90%;}
+.textpop {
+  height: 90%;
+}
 
 
 
@@ -349,7 +369,10 @@ input::placeholder {
 }
 
 /*titre activités h2*/
-.titreact {margin:0;}
+.titreact {
+  margin: 0;
+  font-size: 22px;
+}
 
 .articleactivites {
   display: flex;
@@ -381,11 +404,14 @@ input::placeholder {
   padding-left: 20px;
   display: flex;
   flex-direction: row;
+  font-size: 15px;
 }
 
 
 /* Shadow*/
-.shadow {box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);}
+.shadow {
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+}
 
 /*Footer*/
 
@@ -394,6 +420,12 @@ input::placeholder {
   background: #F2F2F2;
 }
 
+/*h2 titres footer*/
+
+.titresfooter {
+  font-weight: 700;
+  font-size: 18px;
+}
 
 .menufooter {
   display: flex;
@@ -405,20 +437,33 @@ input::placeholder {
 .menufooter,
 ul {
   padding: 0px;
+  line-height: 25px;
 }
+
+
 
 /*Media queries*/
 
 /*tablette*/
-@media screen and (max-width:992px) 
+@media screen and (max-width:992px) {
 
-{
+  /*body tab*/
 
-  
-/*formulaire tab*/
+  body {
+    margin: 40px;
+  }
 
-  .bouton {
-    width: 30%;
+
+  /*formulaire tab*/
+
+  .formulaire {
+    width: 70%;
+  }
+
+  /*filtres tab*/
+
+  .filter {
+    font-size: 15px;
   }
 
   /*section heb tab*/
@@ -429,59 +474,90 @@ ul {
 
   /*heb tab*/
 
-  .heb{width: 100%;}
+  .heb {
+    width: 100%;
+  }
+
+  /*titres cartes heb h3 tab*/
+
+  .titrecarteheb {
+    font-size: 14px;
+  }
 
   /*pop tab*/
 
-  .pop {width:100% ;
+  .pop {
+    width: 100%;
     flex-direction: column;
   }
 
   .articlepop {
     flex-direction: row;
+
   }
+
+  /*titres cartes pop h3 tab*/
+
+  .titrecartepop {
+    font-size: 14px;
+  }
+
+  /*titres activités h3 tab*/
+  .titresact {
+    font-size: 14px;
+  }
+
 
   /*img act tab*/
   .imgact {
     height: 200px;
   }
 
-/*footer tab*/
-
-.footer {
-  padding : 20px;
-}
+  /*footer tab*/
 
 
-.menufooter {
-  justify-content: space-between;
-  gap: 20px;
-}
+
+
+  .menufooter {
+    justify-content: space-between;
+    gap: 20px;
+  }
 
 
 }
 
 /*mobile*/
 @media screen and (max-width:768px) {
+  /*body mob*/
 
+  body {
+    margin: 0px;
+  }
 
-  
-    /*header mob*/
+  /*header mob*/
 
   .header {
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
+    width: 100%
   }
+
+
 
   /*nav mobile*/
 
-  nav {margin-top: 30px;}
-
-  nav a {flex-direction: row;
-    border-bottom: 3px solid #F2F2F2;
-    border-width: 100%;
+  nav {
+    margin-top: 30px;
+    display: flex;
     width: 100%;
+  }
+
+  nav a {
+    border-bottom: 3px solid #F2F2F2;
     padding-bottom: 30px;
+    width: 100%;
+    padding-left: 60px;
   }
 
 
@@ -492,11 +568,9 @@ ul {
   }
 
 
-  /*titre page mob*/
 
-  .titrepage{width: 75%;}
 
-     /*formulaire mob*/
+  /*formulaire mob*/
 
   .formulaire {
     justify-content: center;
@@ -504,11 +578,11 @@ ul {
   }
 
   .fa-location-dot {
-    width: 15%;
+    width: 10%;
   }
 
-   input {
-    width: 50%;
+  input {
+    width: 60%;
   }
 
   .loupe {
@@ -521,10 +595,10 @@ ul {
 
 
   .bouton {
-    width: 15%;
+    width: 10%;
   }
 
-  
+
 
   /*filtres mob*/
 
@@ -535,23 +609,21 @@ ul {
     gap: 10px
   }
 
+
   .filtres h2 {
     width: 100%;
   }
 
-  .filter {width: 45%;
-    font-weight: 600;
+  .filter {
+    width: 45%;
     text-align: start;
+    font-size: 12px;
   }
 
   .ifiltres {
     padding: none;
   }
 
-  /*Information mob*/
-
-.information {width:75%;
-}
 
   /*section heb mob*/
 
@@ -566,51 +638,78 @@ ul {
   }
 
   .articlepop {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
   }
+
 
   /*heb mobile*/
 
 
   .heb {
+    padding-top: 0px;
     background: white;
+    padding-left: 20px;
     width: 100%;
   }
 
   .articleheb {
     display: flex;
     flex-direction: column;
-   
+    width: 100%;
+
   }
 
   .aheb {
     width: 100%;
   }
 
-  .articleheb {
-    flex-direction: column;
-  }
 
   .afficher {
     display: none;
   }
 
-/*activités mob*/
+  /*activités mob*/
 
-/*titre activités h2 mob*/
-.titreact {width: 50%;}
+  #activites {
+    width: 95%;
+    padding-left: 20px;
+  }
+
+  /*titre activités h2 mob*/
+  .titreact {
+    width: 50%;
+  }
 
   .aact {
     width: 100%;
   }
 
   .articleactivites {
+    display: flex;
     flex-direction: column;
+    gap: 30px;
+    width: 100%;
   }
+
+  .imgact {
+    height: 150px;
+  }
+
+
+
+
+
 
   /*footer mob*/
 
-  .footer {Width:100%;}
+  .footer {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
 
   .menufooter {
     flex-direction: column;

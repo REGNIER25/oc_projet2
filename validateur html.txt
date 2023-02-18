@@ -1,0 +1,16 @@
+    Warning: Consider adding a lang attribute to the html start tag to declare the language of this document.
+
+    From line 1, column 16; to line 2, column 6
+
+    TYPE html>↩<html>↩↩<hea
+
+    For further guidance, consult Declaring the overall language of a page and Choosing language tags.
+
+    If the HTML checker has misidentified the language of this document, please file an issue report or send e-mail to report the problem.
+
+    Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+    From line 39, column 17; to line 39, column 69
+
+              <input type="text" placeholder="Marseille, France" />↩     
+
