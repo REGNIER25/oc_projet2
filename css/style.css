@@ -1,7 +1,6 @@
 /*font-family: 'Raleway'sur le HTML*/
 
 * {
-  max-width: 1400px;
   box-sizing: border-box;
   font-family: 'Raleway';
   margin: 0;
@@ -11,6 +10,8 @@
 /*body*/
 
 body {
+  max-width: 1400px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
@@ -420,7 +421,7 @@ input::placeholder {
 
 /*titres activités h3*/
 .titresact {
-  padding-left: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: row;
   font-size: 15px;
@@ -613,11 +614,12 @@ ul {
   }
 
   .fa-location-dot {
-    width: 10%;
+    width: 15%;
   }
 
   input {
-    width: 60%;
+    width: auto;
+    flex: 1;
   }
 
   /*afficher la loupe*/
@@ -636,7 +638,7 @@ ul {
 
 
   .bouton {
-    width: 10%;
+    width: 15%;
   }
 
 
